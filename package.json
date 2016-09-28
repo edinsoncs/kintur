@@ -1,0 +1,22 @@
+{
+  "name": "kinturbackend",
+  "version": "0.0.1",
+  "description": "kintur",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "author": "Edinson Carranza Saldaña <jean_clude_dortosms@hotmail.com> (http://edinsoncs.com)",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "connect-multiparty": "^2.0.0",
+    "cookie-parser": "^1.4.3",
+    "cookieparser": "^0.1.0",
+    "express": "^4.14.0",
+    "jade": "^1.11.0",
+    "mongodb": "^2.2.10",
+    "monk": "^3.1.2",
+    "shortid": "^2.2.6"
+  }
+}

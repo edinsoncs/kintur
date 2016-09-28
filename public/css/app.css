@@ -1,0 +1,10 @@
+.container {
+	text-align: center;
+}
+.centered {
+	margin: 0 auto;
+	float: inherit;
+}
+.centered input, select {
+	margin-bottom: 20px!important;
+}
