@@ -9,6 +9,9 @@ var run = require('./models/run');
 var publicar = require('./models/publicar');
 var save = require('./models/save');
 var api = require('./models/api');
+var isapi = require('./models/isapi');
+var peru = require('./models/peru');
+
 
 var mongodb = require('mongodb');
 var monk = require('monk');
@@ -38,8 +41,10 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/kinturadmin', publicar);
+app.use('/admin', peru);
 app.use('/save', save);
 app.use('/api', api);
+app.use('/isapi', isapi);
 
 
 app.listen(run(), function(){
