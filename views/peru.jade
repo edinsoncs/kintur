@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+html(lang="es")
+	head
+		meta(charset="UTF-8")
+		title #{title}
+		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css")
+		link(rel="stylesheet", href="css/app.css")
+		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+	body
+		div.container
+			div.row
+				div.col-md-12
+					h2 Publicar Servicio Kintur
+				div.col-md-6.centered
+					form.input-group.form(action="save/peru", method="post", enctype="multipart/form-data")
+						select.form-control(name="categoria")
+							option(value="restaurante") Restaurante
+							option(value="hotel") Hotel
+							option(value="turismo") Turismo
+							option(value="comercios") Comercios
+							option(value="discotecas") Discotecas
+							option(value="eventos") Eventos
+						input(type="text", class="form-control", name="titulo", placeholder="Titulo del servicio")
+						input(type="file", class="form-control", name="logo")
+						input(type="number", class="form-control", placeholder="Telefono", name="telefono")
+						input(type="text", class="form-control", placeholder="Dirección", name="dire")
+						input(type="text", class="form-control", placeholder="Web", name="web")
+						input(type="text", class="form-control", placeholder="Facebook", name="facebook")
+						textarea.form-control(cols="50", rows="5", placeholder="Descripcción del servicio", name="description")
+						input(type="submit", class="btn btn-primary", value="Guardar", style="margin: 1em 0;")
+
