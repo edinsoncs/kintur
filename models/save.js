@@ -31,9 +31,12 @@ router.post('/', multipartMiddleware, function(req, res, next) {
                 'categoria': req.body.categoria,
                 'img': nameimg,
                 'telefono': req.body.telefono,
-                'description': req.body.description
+                'description': req.body.description,
+                'web': req.body.web,
+                'direccion': req.body.dire,
+                'facebook': req.body.facebook
             }, function(err, doc) {
-            	res.redirect('kinturadmin');
+            	res.redirect('admin');
             });
 
         });
