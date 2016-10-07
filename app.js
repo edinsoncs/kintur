@@ -37,7 +37,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/kinturadmin', publicar);
+app.use('/admin', publicar);
 app.use('/save', save);
 app.use('/api', api);
 

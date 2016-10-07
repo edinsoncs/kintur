@@ -15,15 +15,19 @@ html(lang="es")
 				div.col-md-6.centered
 					form.input-group.form(action="save", method="post", enctype="multipart/form-data")
 						select.form-control(name="categoria")
+							option(value="empresas") Empresas
+							option(value="medios") Medios
 							option(value="restaurante") Restaurante
-							option(value="hotel") Hotel
-							option(value="turismo") Turismo
+							option(value="agencias") Agencias
 							option(value="comercios") Comercios
-							option(value="discotecas") Discotecas
+							option(value="artistas") Artistas
 							option(value="eventos") Eventos
 						input(type="text", class="form-control", name="titulo", placeholder="Titulo del servicio")
 						input(type="file", class="form-control", name="logo")
 						input(type="number", class="form-control", placeholder="Telefono", name="telefono")
+						input(type="text", class="form-control", placeholder="Dirección", name="dire")
+						input(type="text", class="form-control", placeholder="Web", name="web")
+						input(type="text", class="form-control", placeholder="Facebook", name="facebook")
 						textarea.form-control(cols="50", rows="5", placeholder="Descripcción del servicio", name="description")
 						input(type="submit", class="btn btn-primary", value="Guardar", style="margin: 1em 0;")
 
