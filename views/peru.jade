@@ -11,15 +11,16 @@ html(lang="es")
 		div.container
 			div.row
 				div.col-md-12
-					h2 Publicar Servicio Kintur
+					h2 Publicar Servicio Peruanos en Argentina
 				div.col-md-6.centered
-					form.input-group.form(action="save/peru", method="post", enctype="multipart/form-data")
+					form.input-group.form(action="save", method="post", enctype="multipart/form-data")
 						select.form-control(name="categoria")
+							option(value="empresas") Empresas
+							option(value="medios") Medios
 							option(value="restaurante") Restaurante
-							option(value="hotel") Hotel
-							option(value="turismo") Turismo
+							option(value="agencias") Agencias
 							option(value="comercios") Comercios
-							option(value="discotecas") Discotecas
+							option(value="artistas") Artistas
 							option(value="eventos") Eventos
 						input(type="text", class="form-control", name="titulo", placeholder="Titulo del servicio")
 						input(type="file", class="form-control", name="logo")
