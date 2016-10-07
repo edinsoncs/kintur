@@ -41,7 +41,6 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-app.use('/admin', publicar);
 
 app.use('/kinturadmin', publicar);
 app.use('/admin', peru);
